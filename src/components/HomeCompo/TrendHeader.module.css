@@ -1,0 +1,101 @@
+.TrendMovie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+
+  margin-bottom: 1.2em;
+}
+
+.trend-movie-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2em;
+
+}
+
+.trend-movie-text-wrapper span {
+  border: 1px solid;
+  padding: .5em;
+}
+
+.trend-movie-text-wrapper span {
+  border-radius: 5px;
+}
+
+
+/* Style the select element */
+.TrendMovie-header select {
+  width: 100%;
+  /* Adjust the width as needed */
+  padding: 5px;
+  /* Adjust the padding as needed */
+  font-size: 16px;
+  /* Adjust the font size as needed */
+  border: 1px solid #F39F5A;
+  /* Border color for the select box */
+  border-radius: 5px;
+  /* Rounded corners for the select box */
+  background-color: #fff;
+  /* Background color for the select box */
+  color: #AE445A;
+  /* Text color for the select box */
+  cursor: pointer;
+  /* Change the cursor to a pointer on hover */
+}
+
+/* Style the options inside the select */
+.TrendMovie-header select option {
+  background-color: #ccc;
+  /* Background color for the options */
+  color: #fff;
+  /* Text color for the options */
+  padding: 3px;
+  /* Adjust the padding as needed */
+}
+
+/* Style the select on hover */
+.TrendMovie-header select:hover {
+  border-color: #AE445A;
+  /* Border color on hover */
+}
+
+.select-wrapper {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TrendMovie-header a {
+  width: 100%;
+  word-break: keep-all;
+  color: #F39F5A;
+  font-size: .9rem;
+}
+
+@media(max-width:485px) {
+
+  .TrendMovie-header h1 {
+    font-size: 1rem;
+  }
+
+  .TrendMovie-header span {
+    font-size: .8rem;
+  }
+
+  .TrendMovie-header a {
+    font-size: .7rem;
+  }
+
+  .TrendMovie-header select {
+    font-size: .8rem;
+  }
+}

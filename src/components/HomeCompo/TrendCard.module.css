@@ -1,0 +1,81 @@
+.trend-movie-container {
+  width: 100%;
+}
+
+.trend-card-wrapper img {
+  margin-bottom: .5em;
+  height: 220px;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.trend-card-wrapper img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+
+.trend-card-wrapper h2 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.trend-card-wrapper span {
+  color: lightgray;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+
+.year-wrapper {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+
+}
+
+.trend-movie-container {
+  display: flex;
+  overflow-x: scroll;
+  gap: 3em;
+  margin-bottom: 2.5em;
+}
+
+.trend-movie-container::-webkit-scrollbar {
+
+  width: 12px;
+  /* Adjust the width as needed */
+}
+
+.trend-movie-container::-webkit-scrollbar-thumb {
+  background-color: #F39F5A;
+  /* Set the color you want */
+  border-radius: 6px;
+  /* Rounded corners for the thumb */
+}
+
+/* Style the scrollbar track (the area behind the thumb) */
+.trend-movie-container::-webkit-scrollbar-track {
+  background: transparent;
+  /* Set to transparent to show the background color */
+}
+
+@media(max-width:485px) {
+  .trend-card-wrapper h2 {
+    font-size: 1rem;
+  }
+
+  .trend-card-wrapper span {
+    font-size: 1rem;
+  }
+
+  .trend-movie-container {
+    overflow-x: auto;
+    /* Use auto to enable natural scrolling behavior */
+    white-space: nowrap;
+    /* Prevent items from wrapping to the next line */
+  }
+
+
+}

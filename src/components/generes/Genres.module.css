@@ -1,0 +1,60 @@
+.genre-container {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.second-wrapper {
+  background-color: #F39F5A;
+}
+
+.genre-container a {
+  cursor: pointer;
+  padding: 4.5em;
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 7px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.first-wrapper {
+  background-color: #cc3d5a;
+
+}
+
+
+.genre-container a:hover {
+  animation: shakeanimation;
+  animation-duration: 1s;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shakeanimation {
+
+  15%,
+  85% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  25%,
+  75% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-8px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(8px, 0, 0);
+  }
+}
